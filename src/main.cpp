@@ -46,7 +46,17 @@ int main() {
     cout << "valores: " << *tercero << " " << *cuarto << endl;
     cout << "direcciones: " << tercero << " " << cuarto << endl;
 
+    intercambiarPunteroConReferencia(tercero, cuarto);
+    cout << "valores: " << *tercero << " " << *cuarto << endl;
+    cout << "direcciones: " << tercero << " " << cuarto << endl;
 
+    /* la siguiente línea no compila,
+     * los argumentos debe ser variables, no valores
+     */
+    //intercambiarPunteroConReferencia(&primero, &segundo);
+
+    delete tercero;
+    delete cuarto;
 
     return 0;
 }

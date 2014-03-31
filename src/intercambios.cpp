@@ -27,3 +27,10 @@ void intercambiarPuntero(int* puntero1, int* puntero2) {
     puntero2 = puntero1;
     puntero1 = anterior2;
 }
+
+void intercambiarPunteroConReferencia(int* & referencia1, int* & referencia2) {
+
+    int* puntero2 = referencia2;
+    referencia2 = referencia1;
+    referencia1 = puntero2;
+}
