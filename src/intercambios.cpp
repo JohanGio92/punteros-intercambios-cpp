@@ -1,20 +1,20 @@
 #include "intercambios.h"
 
-void intercambiarConInt(int valor1, int valor2) {
+void intercambiarInt(int valor1, int valor2) {
 
     int anterior2 = valor2;
     valor2 = valor1;
     valor1 = anterior2;
 }
 
-void intercambiarConReferenciaInt(int& referencia1, int& referencia2) {
+void intercambiarIntConReferencia(int& referencia1, int& referencia2) {
 
     int valor2 = referencia2;
     referencia2 = referencia1;
     referencia1 = valor2;
 }
 
-void intercambiarConPunteroInt(int* puntero1, int* puntero2) {
+void intercambiarIntConPuntero(int* puntero1, int* puntero2) {
 
     int valor2 = *puntero2;
     *puntero2 = *puntero1;
