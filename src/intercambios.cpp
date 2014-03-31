@@ -13,3 +13,10 @@ void intercambiarConReferenciaInt(int& referencia1, int& referencia2) {
     referencia2 = referencia1;
     referencia1 = valor2;
 }
+
+void intercambiarConPunteroInt(int* puntero1, int* puntero2) {
+
+    int valor2 = *puntero2;
+    *puntero2 = *puntero1;
+    *puntero1 = valor2;
+}

@@ -19,12 +19,23 @@ int main() {
     intercambiarConReferenciaInt(primero, segundo);
     cout << primero << " " << segundo << endl;
 
-    /* la siguiente linea no compila,
+    /* la siguiente línea no compila,
      * los argumentos deben ser variables porque los parámetros
      * son de tipo referencia a entero */
     // intercambiarConReferenciaInt(3, 4);
 
+    int* ptrPrimero = &primero;
+    int* ptrSegundo = &segundo;
+    intercambiarConPunteroInt(ptrPrimero, ptrSegundo);
+    cout << primero << " " << segundo << endl;
 
+    /* sin utilizar variables auxiliares */
+    intercambiarConPunteroInt(&primero, &segundo);
+    cout << primero << " " << segundo << endl;
+
+    /* la siguiente línea no compila,
+     * los argumentos deben ser punteros a int */
+    // intercambiarConPunteroInt(primero, segundo);
 
     return 0;
 }
