@@ -1,3 +1,3 @@
-Algoritmos y ProgramaciÃ³n 2 - FI UBA
+Algoritmos y Programación 2 - FI UBA
 
 # Punteros: Intercambios en C++
