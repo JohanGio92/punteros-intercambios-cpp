@@ -37,5 +37,16 @@ int main() {
      * los argumentos deben ser punteros a int */
     // intercambiarIntConPuntero(primero, segundo);
 
+    int* tercero = new int(3);
+    int* cuarto = new int(4);
+    cout << "valores: " << *tercero << " " << *cuarto << endl;
+    cout << "direcciones: " << tercero << " " << cuarto << endl;
+
+    intercambiarPuntero(tercero, cuarto);
+    cout << "valores: " << *tercero << " " << *cuarto << endl;
+    cout << "direcciones: " << tercero << " " << cuarto << endl;
+
+
+
     return 0;
 }

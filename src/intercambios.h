@@ -7,4 +7,6 @@ void intercambiarIntConReferencia(int& referencia1, int& referencia2);
 
 void intercambiarIntConPuntero(int* puntero1, int* puntero2);
 
+void intercambiarPuntero(int* puntero1, int* puntero2);
+
 #endif /* INTERCAMBIOS_H_ */

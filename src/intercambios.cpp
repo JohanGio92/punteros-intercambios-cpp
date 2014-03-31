@@ -20,3 +20,10 @@ void intercambiarIntConPuntero(int* puntero1, int* puntero2) {
     *puntero2 = *puntero1;
     *puntero1 = valor2;
 }
+
+void intercambiarPuntero(int* puntero1, int* puntero2) {
+
+    int* anterior2 = puntero2;
+    puntero2 = puntero1;
+    puntero1 = anterior2;
+}
