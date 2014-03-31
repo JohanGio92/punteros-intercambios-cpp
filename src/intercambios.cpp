@@ -34,3 +34,11 @@ void intercambiarPunteroConReferencia(int* & referencia1, int* & referencia2) {
     referencia2 = referencia1;
     referencia1 = puntero2;
 }
+
+
+void intercambiarPunteroConPuntero(int** ptrPuntero1, int** ptrPuntero2) {
+
+    int* puntero2 = *ptrPuntero2;
+    *ptrPuntero2 = *ptrPuntero1;
+    *ptrPuntero1 = puntero2;
+}

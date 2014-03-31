@@ -11,4 +11,6 @@ void intercambiarPuntero(int* puntero1, int* puntero2);
 
 void intercambiarPunteroConReferencia(int* & referencia1, int* & referencia2);
 
+void intercambiarPunteroConPuntero(int** ptrPuntero1, int** ptrPuntero2);
+
 #endif /* INTERCAMBIOS_H_ */

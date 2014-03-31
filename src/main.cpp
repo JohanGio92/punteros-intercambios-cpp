@@ -37,26 +37,30 @@ int main() {
      * los argumentos deben ser punteros a int */
     // intercambiarIntConPuntero(primero, segundo);
 
-    int* tercero = new int(3);
-    int* cuarto = new int(4);
-    cout << "valores: " << *tercero << " " << *cuarto << endl;
-    cout << "direcciones: " << tercero << " " << cuarto << endl;
+    int* ptrTercero = new int(3);
+    int* ptrCuarto = new int(4);
+    cout << "valores: " << *ptrTercero << " " << *ptrCuarto << endl;
+    cout << "direcciones: " << ptrTercero << " " << ptrCuarto << endl;
 
-    intercambiarPuntero(tercero, cuarto);
-    cout << "valores: " << *tercero << " " << *cuarto << endl;
-    cout << "direcciones: " << tercero << " " << cuarto << endl;
+    intercambiarPuntero(ptrTercero, ptrCuarto);
+    cout << "valores: " << *ptrTercero << " " << *ptrCuarto << endl;
+    cout << "direcciones: " << ptrTercero << " " << ptrCuarto << endl;
 
-    intercambiarPunteroConReferencia(tercero, cuarto);
-    cout << "valores: " << *tercero << " " << *cuarto << endl;
-    cout << "direcciones: " << tercero << " " << cuarto << endl;
+    intercambiarPunteroConReferencia(ptrTercero, ptrCuarto);
+    cout << "valores: " << *ptrTercero << " " << *ptrCuarto << endl;
+    cout << "direcciones: " << ptrTercero << " " << ptrCuarto << endl;
 
     /* la siguiente línea no compila,
      * los argumentos debe ser variables, no valores
      */
     //intercambiarPunteroConReferencia(&primero, &segundo);
 
-    delete tercero;
-    delete cuarto;
+    intercambiarPunteroConPuntero(&ptrTercero, &ptrCuarto);
+    cout << "valores: " << *ptrTercero << " " << *ptrCuarto << endl;
+    cout << "direcciones: " << ptrTercero << " " << ptrCuarto << endl;
+
+    delete ptrTercero;
+    delete ptrCuarto;
 
     return 0;
 }
