@@ -119,5 +119,5 @@
 		<scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.release.208863866;cdt.managedbuild.config.gnu.exe.release.208863866.;cdt.managedbuild.tool.gnu.c.compiler.exe.release.739726254;cdt.managedbuild.tool.gnu.c.compiler.input.471896821">
 			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId="org.eclipse.cdt.managedbuilder.core.GCCManagedMakePerProjectProfileC"/>
 		</scannerConfigBuildInfo>
-	</storageModule>
+	</storageModule>	
 </cproject>
